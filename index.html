@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Отправка заявки</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="form">
+        <form action="/sendmail.php" id="form" class="form-body">
+            <h1 class="form-title">Отправка заявки на участие в семинаре</h1>
+            <p class="form-info">Организаторы свяжутся с вами для подтверждения записи.<br> Участие в семинаре <span>бесплатное</span>.</p>
+            <div class="form-item">
+                <label for="formName" class="form-label">Ваше имя:</label>
+                <input id="formName" type="text" name="name" class="form-input required">
+            </div>
+            <div class="form-item">
+                <label for="formEmail" class="form-label">Контактный email:</label>
+                <input id="formEmail" type="text" name="email" class="form-input required email">
+            </div>
+            <div class="form-item">
+                <div class="form-label">Интересующий семинар:</div>
+                <div class="select">
+                    <select name="seminar">
+                        <option value="Семинар 1" selected>Семинар 1</option>
+                        <option value="Семинар 2">Семинар 2</option>
+                        <option value="Семинар 3">Семинар 3</option>
+                        <option value="Семинар 4">Семинар 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-submit">
+                <div class="form-desc">
+                    <div>Все поля обязательны для заполнения.</div>
+                    <div>Отправляя заявку, вы соглашаетесь с договором публичной оферты и политикой обработки данных.</div>
+                </div>
+                <button type="submit" class="form-button">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
